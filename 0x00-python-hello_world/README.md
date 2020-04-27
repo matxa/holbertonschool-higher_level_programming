@@ -57,4 +57,4 @@ after giving the user/file executable permission using the command `chmod u+x fi
 
 ## 3. Print integer
 
-### Print using format (Helpful-link)[https://pyformat.info/]
+### Print using format [Helpful-link](https://pyformat.info/)
