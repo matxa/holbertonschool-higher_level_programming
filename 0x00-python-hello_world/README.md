@@ -1,5 +1,15 @@
 Hello World Python
 
+# Things to keep in mind while reading this README.md
+
+- #!/usr/bin/python3 -> This sh-bang allows me to run my python file as follows ./file.py
+after giving the user/file executable permission using the command `chmod u+x file.py`
+
+- There are multiple ways to print in python as you can see in task #0, #1
+
+- to escape a character use `\` follow by the character.. `print("\"Hey\"")`
+
+
 ## 0. Run Python file
 
 ### A Shell script that runs a Python script.
@@ -31,3 +41,14 @@ Hello World Python
     2. Running the file
 
       - `./1-run_inline` is the same as -> `python3 <<< PYCODE='print("Holberton School: {}".format(88+10))'`
+
+## 2. Hello, print
+
+### Printing in Python (    print()   ) - Write a Python script that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
+
+1. Here we have to read the task carefully. It's asking to print exactly what it shows, include the double quote in the beginning ("Programming... ). There are different was to do achieve this end result.
+
+  - The 2 most common ways are:
+
+  1. using double quotes inside of single quotes. `print('"Programming... ')`
+  2. using the escape character. `print("\"Programming... ")`
