@@ -76,3 +76,21 @@ a[start:stop:step]
 ## 9. Easter Egg
 
 ### [Helpful link](https://www.python.org/dev/peps/pep-0020/)
+
+## 10. Linked list cycle
+
+## 11. Hello, write
+
+### Writing to stderr in python3
+
+- Step by Step
+
+1- import the module `sys`
+2- to use it just call the module `sys`
+3- next state where/what you want to write to my case is `stderr`
+4- then use the write func to write the text... `write(text)`
+
+```
+sys.stderr.write(text)
+```
+[Helpful-link](https://docs.python.org/3/library/sys.html)
