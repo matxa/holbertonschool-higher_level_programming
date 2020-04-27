@@ -59,7 +59,7 @@ after giving the user/file executable permission using the command `chmod u+x fi
 
 ### Print using format [Helpful-link](https://pyformat.info/)
 
-## 7. Copy - Cut - Paste
+## 7. Copy - Cut - Paste, 8. Create a new sentence
 
 ### String slicing
 
@@ -73,3 +73,6 @@ There is also the step value, which can be used with any of the above:
 
 a[start:stop:step]
 ```
+## 9. Easter Egg
+
+### [Helpful link](https://www.python.org/dev/peps/pep-0020/)
