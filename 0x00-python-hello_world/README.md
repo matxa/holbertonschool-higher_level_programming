@@ -55,6 +55,6 @@ after giving the user/file executable permission using the command `chmod u+x fi
   1. using double quotes inside of single quotes. `print('"Programming... ')`
   2. using the escape character. `print("\"Programming... ")`
 
-## 3. Print integer , 4. Print float, 5. Print string
+## 3. Print integer , 4. Print float, 5. Print string, 6. Play with strings
 
 ### Print using format [Helpful-link](https://pyformat.info/)
