@@ -20,8 +20,9 @@ Hello World Python
 
 ### A Shell script that runs a Python script.
 
-- *** The Python code will be saved in the environment variable `$PYCODE` ***
-  `PYCODE='print("Holberton School: {}".format(88+10))'`
+- ***The Python code will be saved in the environment variable `$PYCODE`***
+
+`PYCODE='print("Holberton School: {}".format(88+10))'`
 
   - To run an in-line bash/python command you need to use the `<<<`
 
