@@ -9,6 +9,8 @@ after giving the user/file executable permission using the command `chmod u+x fi
 
 - to escape a character use `\` follow by the character.. `print("\"Hey\"")`
 
+- Python print's function adds a new line by itself, to stop it from doing so just use (`end=''`).. `print("Hello, World", end='')`
+
 
 ## 0. Run Python file
 
@@ -52,3 +54,7 @@ after giving the user/file executable permission using the command `chmod u+x fi
 
   1. using double quotes inside of single quotes. `print('"Programming... ')`
   2. using the escape character. `print("\"Programming... ")`
+
+## 3. Print integer
+
+### Print using format (Helpful-link)[https://pyformat.info/]
