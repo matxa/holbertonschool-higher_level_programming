@@ -25,6 +25,6 @@ Hello World Python
 
   - To run an in-line bash/python command you need to use the `<<<`
 
-    1. `<<<` - stands for "Here String" -> can be considered as a stripped-down form of a here document. It consists of nothing more than COMMAND <<<$WORD, where $WORD is expanded and fed to the stdin of COMMAND.[source-link] (https://linux.die.net/abs-guide/x15683.html)
-    
+    1. `<<<` - stands for "Here String" -> can be considered as a stripped-down form of a here document. It consists of nothing more than COMMAND <<<$WORD, where $WORD is expanded and fed to the stdin of COMMAND.[source-link](https://linux.die.net/abs-guide/x15683.html)
+
     - `./1-run_inline` is the same as -> `python3 <<< PYCODE='print("Holberton School: {}".format(88+10))'`
