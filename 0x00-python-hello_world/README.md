@@ -58,3 +58,18 @@ after giving the user/file executable permission using the command `chmod u+x fi
 ## 3. Print integer , 4. Print float, 5. Print string, 6. Play with strings
 
 ### Print using format [Helpful-link](https://pyformat.info/)
+
+## 7. Copy - Cut - Paste
+
+### String slicing
+
+```
+a[start:stop]  # items start through stop-1
+a[start:]      # items start through the rest of the array
+a[:stop]       # items from the beginning through stop-1
+a[:]           # a copy of the whole array
+
+There is also the step value, which can be used with any of the above:
+
+a[start:stop:step]
+```
