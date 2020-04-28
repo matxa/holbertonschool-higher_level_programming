@@ -79,18 +79,28 @@ a[start:stop:step]
 
 ## 10. Linked list cycle
 
-## 11. Hello, write
+## 100. Hello, write
 
 ### Writing to stderr in python3
 
 - Step by Step
 
 1- import the module `sys`
+
 2- to use it just call the module `sys`
+
 3- next state where/what you want to write to my case is `stderr`
+
 4- then use the write func to write the text... `write(text)`
 
 ```
 sys.stderr.write(text)
 ```
 [Helpful-link](https://docs.python.org/3/library/sys.html)
+
+## 101. Compile
+
+## 102. ByteCode -> Python #1
+
+- [How to read ByteCode](https://opensource.com/article/18/4/introduction-python-bytecode)
+- dis -> [Disassembler for Python bytecode](https://docs.python.org/3.4/library/dis.html) 
