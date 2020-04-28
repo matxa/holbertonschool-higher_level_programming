@@ -103,4 +103,9 @@ sys.stderr.write(text)
 ## 102. ByteCode -> Python #1
 
 - [How to read ByteCode](https://opensource.com/article/18/4/introduction-python-bytecode)
-- dis -> [Disassembler for Python bytecode](https://docs.python.org/3.4/library/dis.html) 
+- dis -> [Disassembler for Python bytecode](https://docs.python.org/3.4/library/dis.html)
+  ```
+  import dis
+  dis.dis(function_name)
+  ```
+  The above will show the ByteCode produced by the given function.
