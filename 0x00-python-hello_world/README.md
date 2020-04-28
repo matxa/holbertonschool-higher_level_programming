@@ -79,6 +79,14 @@ a[start:stop:step]
 
 ## 10. Linked list cycle
 
+- The approach I took to solved this task was, create two variables(one_second, two_seconds).
+
+    1. Loop through the list while `one_second && two_seconds && two_seconds->next`
+
+    2. `one_second` -> runs to the list at a slower speed then variable `two_seconds`. Meaning the variable `one_second` will run the list one node at the time, while the variable `two_seconds` will run the list two nodes at the time.
+
+    3. Doing that we know that if both variable end on the same node then new know there is a a cycle. If so then return (1) else (0)
+
 ## 100. Hello, write
 
 ### Writing to stderr in python3
@@ -99,6 +107,12 @@ sys.stderr.write(text)
 [Helpful-link](https://docs.python.org/3/library/sys.html)
 
 ## 101. Compile
+
+- ![image of explained script](https://lh3.googleusercontent.com/R5kKIPEOk_trUoeZEALUKYdeQL_jpmYeja05-1hMPGNabQbXyQdSTj_rW9XC8fdRf1Ni2R0SspOkwVjE6DyMNMK32H7KCBXnG7tn3jMo7MZ3bNccF2g6mUnkhUNyBMmejo0H-besLPcbTWBmEQxZatwZTp4SqA43_u5TeHbk-EB_J0eJX38zCeRp1k1UqG0-ovBDZKVNh-xPFyH-OQa4F_R9meLzwRbIne4TWZKhBX0plWXTMlMRC2ezc_oRhD7YKeJHAwpu2dELyAYekklqdetGntQejlS3jfA9wan0wfjmnKYU9aleYe160eSVKx8NJg4lFZdgXrbjhs6YZ6FB1XP7KR-VwBAgknBf5uzQRVa5EkzgrKQ_YhnI2ACA8myZjHSrMnkV2EsI4dsr3Pg1_SehhtYZH_OdHw9U27OZyzQ2AQ2Xog_WYXFsGQJx7tCDzw_L-CkmSGXCkcoxm4SbRJoAQy7KH7-d9KT4Vb4-yOnIRsG_YjQOKlEUFPA1bgzTmOWq5zLfygdc4VZrINS4rereZiCtj2w3hRev8KEUs1rJU8TbrDM_gNJ2i21v6WU_BIsFr7h_E3t1eDlnXDT208G4TSMXLR_jzC9wY0SLae3T5NO3pBPPEsG7Zk90eKwucWdqAwnkXqyrlKxFKu8dmH1c-j36B6nuypw-2pkAZ9HCdVdQyZLkQXIH9S1C=w2214-h670-no)
+
+- ***-b*** -> Write the byte-code files to their legacy locations and names, which may overwrite byte-code files created by another version of Python. The default is to write files to their PEP 3147 locations and names, which allows byte-code files from multiple versions of Python to coexist.
+
+- ***$PYFILE*** -> variable that holds the file name(main.py)
 
 ## 102. ByteCode -> Python #1
 

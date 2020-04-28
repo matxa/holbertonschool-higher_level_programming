@@ -11,10 +11,10 @@ int check_cycle(listint_t *list)
 	listint_t *one_second = list;
 	listint_t *two_seconds = list;
 
-	while (two_seconds && one_second && one_second->next)
+	while (one_second && two_seconds && two_seconds->next)
 	{
-		two_seconds = two_seconds->next;
-		one_second = one_second->next->next;
+		one_second = one_second->next;
+		two_seconds = two_seconds->next->next;
 		if (two_seconds == one_second)
 			return (1);
 	}
