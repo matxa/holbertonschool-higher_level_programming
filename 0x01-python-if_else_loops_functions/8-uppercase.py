@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 def uppercase(str):
-    upp = 0
     for i in str:
         if ord(i) > 96:
             i = ord(i) - 32
