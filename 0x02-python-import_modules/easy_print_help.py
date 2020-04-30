@@ -2,5 +2,4 @@
 def py_is_cool():
     print('#pythoniscool')
 
-if __name__ == "__main__":
-    py_is_cool()
+py_is_cool()
