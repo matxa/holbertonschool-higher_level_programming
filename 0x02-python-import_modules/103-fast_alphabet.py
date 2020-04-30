@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-import file_helper_103
-file_helper_103.upper_alpha()
+from import file_helper_103 import upper_alpha
+upper_alpha()
