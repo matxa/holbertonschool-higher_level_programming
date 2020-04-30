@@ -4,5 +4,4 @@ def upper_alpha():
         print("{}".format(chr(i)), end='')
     print()
 
-if __name__ == "__main__":
-    upper_alpha()
+upper_alpha()
