@@ -1,28 +1,33 @@
 #!/usr/bin/python3
-from calculator_1 import add, sub, mul, div
-from sys import argv
-
 if __name__ == "__main__":
+    from sys import argv, exit
+    from calculator_1 import add, sub, mul, div
 
-    operators = ['+', '-', '*', '/']
-    op = argv[2]
-    func = None
-    a = int(argv[1])
-    b = int(argv[3])
+operators = ['+', '-', '*', '/']
 
-    if len(argv) - 1 != 3:
-        print("Unknown operator. Available operators: +, -, * and /")
+usage = "Usage: ./100-my_calculator.py <a> <operator> <b>"
+unknown_operator = "Unknown operator. Available operators: +, -, * and /"
+
+if len(argv) == 4:
+    list = []
+    for i in argv[1:]:
+        list.append(i)
+    operator = argv[2]
+    a = int(math_list[0])
+    b = int(math_list[2])
+    if op in operators:
+        if op == '+':
+            print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))
+        elif op == '-':
+            print("{:d} - {:d} = {:d}".format(a, b, sub(a, b)))
+        elif op == '*':
+            print("{:d} * {:d} = {:d}".format(a, b, mul(a, b)))
+        elif op == '/':
+            print("{:d} / {:d} = {:d}".format(a, b, div(a, b)))
+    else:
+        print("{}".format(unknown_operator))
         exit(1)
-    if op not in operators:
-        print("Usage: ./100-my_calculator.py <a> <operator>")
-        exit(1)
-
-    if op == operators[0]:
-        func = add(a, b)
-    elif op == operators[1]:
-        func = sub(a, b)
-    elif op == operators[2]:
-        func = mul(a, b)
-    elif op == operators[3]:
-        func = div(a, b)
-    print("{:d} {} {:d} = {:d}".format(a, op, b, func))
+    exit(0)
+else:
+    print("{}".format(usage))
+    exit(1)
