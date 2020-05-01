@@ -3,7 +3,6 @@ if __name__ == "__main__":
     from sys import argv, exit
     from calculator_1 import add, sub, mul, div
 
-    operators = ['+', '-', '*', '/']
     if len(argv) == 4:
         list = []
         for i in argv[1:]:
