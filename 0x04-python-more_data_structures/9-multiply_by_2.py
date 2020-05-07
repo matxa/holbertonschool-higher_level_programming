@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def multiply_by_2(a_dictionary):
+    if not a_dictionary:
+        return None
     a_dictionary_copy = a_dictionary.copy()
     for k, v in a_dictionary_copy.items():
         a_dictionary_copy.update({k: v*2})
