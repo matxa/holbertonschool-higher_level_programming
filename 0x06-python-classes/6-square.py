@@ -50,8 +50,7 @@ class Square:
     def my_print(self):
         if self.__size != 0:
             for line in range(self.__size):
-                if not self.__position[1] > 0:
-                    print(" " * self.__position[0], end="")
+                print(" " * self.__position[0], end="")
                 for square in range(self.__size):
                     print("#", end="")
                 print()
