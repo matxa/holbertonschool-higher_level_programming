@@ -10,10 +10,12 @@ def matrix_divided(matrix, div):
         raise TypeError(type_err)
     for lis in matrix:
         if type(lis) != list:
-            raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+            raise TypeError("matrix must be a matrix (list of lists) of \
+integers/floats")
         for num in lis:
             if num * 0 != 0:
-                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+                raise TypeError("matrix must be a matrix (list of lists) of \
+integers/floats")
     sum_l = sum(len(row) for row in matrix)
     num_div = sum_l / len(matrix[0])
     if num_div.is_integer() is False:
