@@ -91,8 +91,7 @@ class Rectangle:
         else:
             return rect_2
 
+    """A rectangle is a square"""
     @classmethod
     def square(cls, size=0):
-        """ A rectangle is a square
-        """
         return cls(size, size)
