@@ -21,3 +21,11 @@ TypeError: b must be an integer
 Traceback (most recent call last):
     ...
 TypeError: a must be an integer
+>>> add_integer("school", 21)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+>>> add_integer(10032432343242334234343, 14324324323423234567890)
+24356756666665568802233
+>>> add_integer(102.2, 23.4)
+125
