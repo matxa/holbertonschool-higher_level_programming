@@ -19,7 +19,7 @@ class Rectangle:
     """Getting the private __height variable"""
     @property
     def height(self):
-        return self.__width
+        return self.__height
 
     """Setting the private __height variable"""
     @height.setter
