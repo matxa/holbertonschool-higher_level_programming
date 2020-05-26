@@ -3,6 +3,7 @@
 
 
 class Rectangle:
+    number_of_instances = 0
     """Initializing the Rectangle class"""
     def __init__(self, width=0, height=0):
         if type(height) != int:
@@ -15,6 +16,7 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         self.__height = height
         self.__width = width
+        Rectangle.number_of_instances += 1
 
     """Getting the private __height variable"""
     @property
