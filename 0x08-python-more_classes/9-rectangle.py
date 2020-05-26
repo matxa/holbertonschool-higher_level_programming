@@ -87,7 +87,7 @@ class Rectangle:
         Args:
             size (int): width == height == size
         """
-        return (cls(size, size))
+        return (Rectangle(size, size))
 
     """String Representation of rectangle class"""
     def __str__(self):
