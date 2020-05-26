@@ -3,9 +3,13 @@
 
 
 class Rectangle:
+    """Initializing the Rectangle class
+    """
+
+    # Public attribute
     number_of_instances = 0
-    print_symbol = "#"
-    """Initializing the Rectangle class"""
+    print_symbol = '#'
+
     def __init__(self, width=0, height=0):
         if type(height) != int:
             raise TypeError("height must be an integer")
@@ -59,6 +63,8 @@ class Rectangle:
 
     """String Representation of rectangle class"""
     def __str__(self):
+        if self.__height == 0 or self.__width == 0:
+            return ""
         symb = (str(self.print_symbol) * self.__width)
         rect_r = (symb + '\n') * (self.__height - 1)
         return rect_r + symb
