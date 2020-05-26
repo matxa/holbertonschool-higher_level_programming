@@ -95,4 +95,4 @@ class Rectangle:
     def square(cls, size=0):
         """a rectangle is a square
         """
-        return cls(size, size)
+        return Rectangle(size, size)
