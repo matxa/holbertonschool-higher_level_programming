@@ -6,6 +6,7 @@ class Rectangle:
     number_of_instances = 0
     """Initializing the Rectangle class"""
     def __init__(self, width=0, height=0):
+        Rectangle.number_of_instances += 1
         if type(height) != int:
             raise TypeError("height must be an integer")
         if height < 0:
@@ -16,7 +17,6 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         self.__height = height
         self.__width = width
-        Rectangle.number_of_instances += 1
 
     """Getting the private __height variable"""
     @property
@@ -68,7 +68,6 @@ class Rectangle:
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
 
     """Prititing message when instance of class is deleted"""
-    @classmethod
-    def __del__(cls):
-        cls.number_of_instances -= 1
+    def __del__(self):
         print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1
