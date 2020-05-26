@@ -61,6 +61,12 @@ class Rectangle:
             return 0
         return (self.__height + self.__height) + (self.__width + self.__width)
 
+    @classmethod
+    def square(cls, size=0):
+        """ A rectangle is a square
+        """
+        return cls(width, height)
+
     """String Representation of rectangle class"""
     def __str__(self):
         if self.__height == 0 or self.__width == 0:
@@ -90,11 +96,3 @@ class Rectangle:
             return rect_1
         else:
             return rect_2
-
-    @classmethod
-    def square(cls, size=0):
-        """ A rectangle is a square
-        """
-        width = size
-        height = size
-        return cls(width, height)
