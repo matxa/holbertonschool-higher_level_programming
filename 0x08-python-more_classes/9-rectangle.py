@@ -61,23 +61,6 @@ class Rectangle:
             return 0
         return (self.__height + self.__height) + (self.__width + self.__width)
 
-    """String Representation of rectangle class"""
-    def __str__(self):
-        if self.__height == 0 or self.__width == 0:
-            return ""
-        symb = (str(self.print_symbol) * self.__width)
-        rect_r = (symb + '\n') * (self.__height - 1)
-        return rect_r + symb
-
-    """Representation of rectangle class"""
-    def __repr__(self):
-        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
-
-    """Prititing message when instance of class is deleted"""
-    def __del__(self):
-        print("Bye rectangle...")
-        Rectangle.number_of_instances -= 1
-
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """Return rectangle with greater area
@@ -105,3 +88,20 @@ class Rectangle:
         size (int): width == height == size
         """
         return (cls(size, size))
+
+    """String Representation of rectangle class"""
+    def __str__(self):
+        if self.__height == 0 or self.__width == 0:
+            return ""
+        symb = (str(self.print_symbol) * self.__width)
+        rect_r = (symb + '\n') * (self.__height - 1)
+        return rect_r + symb
+
+    """Representation of rectangle class"""
+    def __repr__(self):
+        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
+
+    """Prititing message when instance of class is deleted"""
+    def __del__(self):
+        print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1
