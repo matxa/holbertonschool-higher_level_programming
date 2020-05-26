@@ -56,5 +56,7 @@ class Rectangle:
 
     """String Representation of rectangle class"""
     def __str__(self):
+        if self.__height == 0 or self.__width == 0:
+            return ""
         rect_r = (('#' * self.__width) + '\n') * (self.__height - 1)
         return rect_r + ('#' * self.__width)
