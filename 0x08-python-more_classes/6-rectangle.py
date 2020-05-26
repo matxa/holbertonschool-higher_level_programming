@@ -68,6 +68,7 @@ class Rectangle:
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
 
     """Prititing message when instance of class is deleted"""
-    def __del__(self):
-        Rectangle.number_of_instances -= 1
+    @classmethod
+    def __del__(cls):
+        cls.number_of_instances -= 1
         print("Bye rectangle...")
