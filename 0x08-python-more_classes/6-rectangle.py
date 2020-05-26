@@ -3,8 +3,12 @@
 
 
 class Rectangle:
+    """Initializing the Rectangle class
+    """
+
+    # Public attribute
     number_of_instances = 0
-    """Initializing the Rectangle class"""
+
     def __init__(self, width=0, height=0):
         if type(height) != int:
             raise TypeError("height must be an integer")
