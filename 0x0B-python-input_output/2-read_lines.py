@@ -8,7 +8,10 @@ def read_lines(filename="", nb_lines=0):
     """
     with open('my_file_0.txt', 'r') as file:
         text = file.readlines()
-        if nb_lines != 0 or nb_lines > len(text):
+        if nb_lines < 0 or len(text) < nb_lines:
+            for line in text:
+                print(line, end="")
+        else:
             text = text[:nb_lines]
-        for line in text:
-            print(line, end="")
+            for line in text:
+                print(line, end="")
