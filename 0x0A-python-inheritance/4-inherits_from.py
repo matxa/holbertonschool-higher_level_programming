@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""function for subclass check"""
 
 
 def inherits_from(obj, a_class):
@@ -6,7 +7,7 @@ def inherits_from(obj, a_class):
     inherited (directly or indirectly) from the specified class;
     otherwise False.
     """
-    if issubclass(type(obj), a_class):
+    if issubclass(obj.__class__, a_class) and type(obj) != a_class:
         return True
     else:
         return False
