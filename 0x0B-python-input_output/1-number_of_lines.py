@@ -8,4 +8,4 @@ def number_of_lines(filename=""):
     """
     with open('my_file_0.txt', 'r') as file:
         text = file.readlines()
-        return len(text)
+    return len(text)
