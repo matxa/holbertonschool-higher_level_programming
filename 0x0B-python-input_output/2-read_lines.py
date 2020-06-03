@@ -6,7 +6,7 @@ def read_lines(filename="", nb_lines=0):
     """opens a file and print n
     amount of lines
     """
-    with open('my_file_0.txt', 'r') as file:
+    with open('my_file_0.txt', encoding="UTF8") as file:
         text = file.readlines()
     if nb_lines < 0 or len(text) < nb_lines:
         for line in text:
