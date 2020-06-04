@@ -6,8 +6,10 @@ def pascal_triangle(n):
     """pascal triangle
     return ls
     """
-    row = [1]
     ls = []
+    row = [1]
+    if n <= 0:
+        return ls
     y = [0]
     ls.append(row)
     for x in range(n):
