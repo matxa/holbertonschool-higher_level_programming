@@ -23,7 +23,7 @@ class Base:
         """json representation
         """
         if not list_dictionaries or len(list_dictionaries) == 0:
-            return []
+            return "[]"
         ls_dict = json.dumps(list_dictionaries)
         return ls_dict
 
