@@ -56,7 +56,7 @@ class Base:
         """returns an instance with
         all attributes already set
         """
-        temp_obj_repr = cls(1, 2, 3, 4, 5)
+        temp_obj_repr = cls(1, 1)
         temp_obj_repr.update(**dictionary)
         return temp_obj_repr
 
