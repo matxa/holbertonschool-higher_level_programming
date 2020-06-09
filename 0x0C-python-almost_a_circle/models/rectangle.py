@@ -83,13 +83,11 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         self.__y = value
 
-    """Calculate the area of the rectangle"""
     def area(self):
         """calc Area
         """
         return self.__height * self.__width
 
-    """Dispay Representation of rectangle class"""
     def display(self):
         """display
         """
@@ -97,14 +95,10 @@ class Rectangle(Base):
         for i in range(self.__height):
             print('{}{}'.format(' ' * self.__x, '#' * self.__width))
 
-    """String Representation of rectangle class"""
     def __str__(self):
-        """string representation
-        """
         tprint = (self.id, self.__x, self.__y, self.__width, self.__height)
         return "[Rectangle] ({}) {:d}/{:d} - {:d}/{:d}".format(*tprint)
 
-    """Update the Rectangle"""
     def update(self, *args, **kwargs):
         """Update
         """
@@ -131,7 +125,6 @@ class Rectangle(Base):
                 elif k == "id":
                     self.id = v
 
-    """return a to_dictionary Representation"""
     def to_dictionary(self):
         """return dict
         """
