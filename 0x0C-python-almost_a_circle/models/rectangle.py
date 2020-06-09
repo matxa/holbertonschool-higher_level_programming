@@ -12,6 +12,23 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
+    @property
+    def width(self):
+        """getting the width
+        """
+        return self.__width
+
+    """Setting the private __width variable"""
+    @width.setter
+    def width(self, value):
+        """Setting the width
+        """
+        if type(value) != int:
+            raise TypeError("width must be an integer")
+        if value <= 0:
+            raise ValueError("width must be > 0")
+        self.__width = value
+
     """Getting the private __height variable"""
     @property
     def height(self):
@@ -29,24 +46,6 @@ class Rectangle(Base):
         if value <= 0:
             raise ValueError("height must be > 0")
         self.__height = value
-
-    """Getting the private __width variable"""
-    @property
-    def width(self):
-        """getting the width
-        """
-        return self.__width
-
-    """Setting the private __width variable"""
-    @width.setter
-    def width(self, value):
-        """Setting the width
-        """
-        if type(value) != int:
-            raise TypeError("width must be an integer")
-        if value <= 0:
-            raise ValueError("width must be > 0")
-        self.__width = value
 
     """Getting the private __x variable"""
     @property
