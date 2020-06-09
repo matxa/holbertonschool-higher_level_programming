@@ -8,14 +8,12 @@ class Square(Rectangle):
     def __init__(self, size, x=0, y=0, id=None):
         super().__init__(size, size, x, y, id)
 
-    """Getting size"""
     @property
     def size(self):
         """get size
         """
         return self.width
 
-    """Setting size"""
     @size.setter
     def size(self, value):
         """set size
@@ -31,7 +29,6 @@ class Square(Rectangle):
         tprint = (self.id, self.x, self.y, self.width)
         return "[Square] ({:d}) {:d}/{:d} - {:d}".format(*tprint)
 
-    """Update the square"""
     def update(self, *args, **kwargs):
         """Update
         """
@@ -54,7 +51,6 @@ class Square(Rectangle):
                 elif k == "id":
                     self.id = v
 
-    """return a to_dictionary Representation"""
     def to_dictionary(self):
         """return dict
         """
