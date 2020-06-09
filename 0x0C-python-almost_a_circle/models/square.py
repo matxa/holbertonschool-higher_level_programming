@@ -15,7 +15,7 @@ class Square(Rectangle):
         """string representation
         """
         tprint = (self.id, self.x, self.y, self.width)
-        return "[Square] ({}) {:d}/{:d} - {:d}".format(*tprint)
+        return "[Square] ({:d}) {:d}/{:d} - {:d}".format(*tprint)
 
     """Getting size"""
     @property
