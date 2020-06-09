@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""class Square that inherites from Rectangle"""
+""" class Square """
 from models.rectangle import Rectangle
 
 
@@ -10,14 +10,12 @@ class Square(Rectangle):
 
     @property
     def size(self):
-        """get size
-        """
+        """ get size """
         return self.width
 
     @size.setter
     def size(self, value):
-        """set size
-        """
+        """ set size """
         if type(value) != int:
             raise TypeError("width must be an integer")
         if value <= 0:
@@ -27,11 +25,10 @@ class Square(Rectangle):
 
     def __str__(self):
         tprint = (self.id, self.x, self.y, self.width)
-        return "[Square] ({:d}) {:d}/{:d} - {:d}".format(*tprint)
+        return "[Square] ({}) {:d}/{:d} - {:d}".format(*tprint)
 
     def update(self, *args, **kwargs):
-        """Update
-        """
+        """ Update """
         if args and len(args) != 0:
             self.id = args[0]
             if len(args) > 1:
