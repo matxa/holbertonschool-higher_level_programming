@@ -57,7 +57,8 @@ class Base:
         all attributes already set
         """
         temp_obj_repr = cls(1, 1)
-        temp_obj_repr.update(**dictionary)
+        if dictionary:
+            temp_obj_repr.update(**dictionary)
         return temp_obj_repr
 
     @classmethod
