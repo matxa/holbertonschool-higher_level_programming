@@ -6,7 +6,6 @@ from models.rectangle import Rectangle
 class Square(Rectangle):
     """class Square"""
     def __init__(self, size, x=0, y=0, id=None):
-        """ INIT """
         super().__init__(size, size, x, y, id)
 
     @property
@@ -54,7 +53,7 @@ class Square(Rectangle):
         """
         return {
             'id': self.id,
-            'size': self.width,
+            'size': self.size,
             'x': self.x,
             'y': self.y
         }
