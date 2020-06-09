@@ -7,7 +7,6 @@ from models.rectangle import Rectangle
 
 class Square(Rectangle):
     """class Square"""
-
     def __init__(self, size, x=0, y=0, id=None):
         super().__init__(size, size, x, y, id)
 
@@ -27,11 +26,8 @@ class Square(Rectangle):
         self.height = value
 
     def __str__(self):
-        i = str(self.id)
-        x = str(self.x)
-        y = str(self.y)
-        s = str(self.size)
-        return "[Square] ({}) {}/{} - {}".format(i, x, y, s)
+        tpr = (self.id, self.x, self.y, self.size)
+        return "[Square] ({}) {:d}/{:d} - {:d}".format(*tpr)
 
     def update(self, *args, **kwargs):
         """ Update """
