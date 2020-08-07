@@ -13,8 +13,8 @@ if __name__ == "__main__":
 
     # executing
     cursor_obj.execute(
-        "SELECT * FROM states WHERE name LIKE %s ORDER BY states.id ASC;",
-        (argv[4], ))
+        "SELECT * FROM states WHERE name='{}' ORDER BY states.id ASC;"
+        .format(argv[4]))
 
     # fetch rows from cursor_obj
     query_rows = cursor_obj.fetchall()
