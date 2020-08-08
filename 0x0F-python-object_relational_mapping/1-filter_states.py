@@ -21,9 +21,10 @@ if __name__ == "__main__":
     query_rows = cursor_obj.fetchall()
 
     # loop through fetched rows
+    i = 0
     for row in query_rows:
         print(row)
-
+    
     # close cursor_obj and connect_db
     cursor_obj.close
     connect_db.close
