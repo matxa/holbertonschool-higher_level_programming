@@ -13,8 +13,9 @@ if __name__ == "__main__":
 
     # executing
     cursor_obj.execute(
-        "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY states.id ASC;"
-                      )
+        """SELECT * FROM states
+        WHERE states.name LIKE 'N%'
+        ORDER BY states.id ASC;""")
 
     # fetch rows from cursor_obj
     query_rows = cursor_obj.fetchall()
@@ -26,4 +27,3 @@ if __name__ == "__main__":
     # close cursor_obj and connect_db
     cursor_obj.close
     connect_db.close
-
