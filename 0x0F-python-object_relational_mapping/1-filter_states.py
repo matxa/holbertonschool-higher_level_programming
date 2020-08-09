@@ -1,21 +1,29 @@
 #!/usr/bin/python3
-"""Write a script that lists all states with a name starting
-with N (upper N) from the database hbtn_0e_0_usa
-"""
+"""MySQLdb practice"""
+from sys import argv
+import MySQLdb
 
 if __name__ == "__main__":
-    from sys import argv
-    import MySQLdb
+    # connect to my sql server
+    connect_db = MySQLdb.connect(host="localhost", port=3066, charset="utf8",
+                                 user=argv[1], passwd=argv[2], db=argv[3])
 
-    conn = MySQLdb.connect(host="localhost", port=3066,
-                           user=argv[1], passwd=argv[2], db=argv[3])
+    # making cursor obj for execution
+    cursor_obj = connect_db.cursor()
 
-    cur = conn.cursor()
-    cur.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
+    # executing
+    cursor_obj.execute(
+        """SELECT * FROM states
+        WHERE states.name LIKE 'N%'
+        ORDER BY states.id ASC;""")
 
-    query_rows = cur.fetchall()
+    # fetch rows from cursor_obj
+    query_rows = cursor_obj.fetchall()
+
+    # loop through fetched rows
     for row in query_rows:
         print(row)
 
-    cur.close
-    conn.close
+    # close cursor_obj and connect_db
+    cursor_obj.close
+    connect_db.close
