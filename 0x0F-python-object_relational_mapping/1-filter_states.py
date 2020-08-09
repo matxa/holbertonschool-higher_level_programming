@@ -13,7 +13,7 @@ if __name__ == "__main__":
 
     # executing
     cursor_obj.execute(
-        """SELECT id, name FROM states
+        """SELECT * FROM states
         WHERE states.name LIKE 'N%'
         ORDER BY states.id ASC;""")
 

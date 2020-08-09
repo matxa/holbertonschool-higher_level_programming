@@ -13,7 +13,7 @@ if __name__ == "__main__":
 
     # executing
     cursor_obj.execute(
-        "SELECT * FROM states WHERE name='{:s}' ORDER BY id ASC;"
+        "SELECT * FROM states WHERE name='{}' ORDER BY id ASC;"
         .format(argv[4]))
 
     # fetch rows from cursor_obj
