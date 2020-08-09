@@ -24,4 +24,3 @@ if __name__ == "__main__":
     # close cursor_obj and connect_db
     cursor_obj.close
     connect_db.close
-
