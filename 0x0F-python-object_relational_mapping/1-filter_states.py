@@ -14,7 +14,7 @@ if __name__ == "__main__":
     # executing
     cursor_obj.execute(
         """SELECT * FROM states
-        WHERE states.name LIKE 'N%'
+        WHERE states.name LIKE BINARY 'N%'
         ORDER BY states.id ASC;""")
 
     # fetch rows from cursor_obj
