@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-"""MySQLdb practice"""
-from sys import argv
-import MySQLdb
+"""MySQLdb practice
+"""
 
 if __name__ == "__main__":
+    from sys import argv
+    import MySQLdb
     # connect to my sql server
     connect_db = MySQLdb.connect(host="localhost", port=3066,
                                  user=argv[1], passwd=argv[2], db=argv[3])
