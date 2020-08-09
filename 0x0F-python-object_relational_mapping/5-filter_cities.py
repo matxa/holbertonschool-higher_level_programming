@@ -28,6 +28,7 @@ if __name__ == "__main__":
         print(query_rows[i][0], end="")
         if i != len(query_rows) - 1:
             print(", ", end="")
+    print()
 
     # close cursor_obj and connect_db
     cursor_obj.close
