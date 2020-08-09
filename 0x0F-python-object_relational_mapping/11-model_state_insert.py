@@ -19,6 +19,7 @@ if __name__ == "__main__":
 
     session.add(louisiana)
     session.commit()
+    print("{}".format(louisiana.id))
     session.close()
 
     Base.metadata.create_all(engine)
