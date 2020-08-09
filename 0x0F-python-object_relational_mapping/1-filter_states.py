@@ -9,21 +9,18 @@ if __name__ == "__main__":
                                  user=argv[1], passwd=argv[2], db=argv[3])
 
     # making cursor obj for execution
-    cursor_obj = connect_db.cursor()
+    cur = connect_db.cursor()
 
     # executing
-    cursor_obj.execute(
-        """SELECT * FROM states
-        WHERE name LIKE 'N%'
-        ORDER BY states.id ASC""")
+    cur.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC;")
 
     # fetch rows from cursor_obj
-    query_rows = cursor_obj.fetchall()
+    query_rows = cur.fetchall()
 
     # loop through fetched rows
     for row in query_rows:
         print(row)
 
     # close cursor_obj and connect_db
-    cursor_obj.close
+    cur.close
     connect_db.close
