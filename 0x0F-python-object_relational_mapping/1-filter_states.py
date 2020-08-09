@@ -15,7 +15,7 @@ if __name__ == "__main__":
     cursor_obj.execute(
         """SELECT * FROM states
         WHERE name LIKE 'N%'
-        ORDER BY states.id ASC;""")
+        ORDER BY states.id ASC""")
 
     # fetch rows from cursor_obj
     query_rows = cursor_obj.fetchall()
