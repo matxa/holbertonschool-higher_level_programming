@@ -1,4 +1,3 @@
 #!/bin/bash
 # display allow
-
-curl -H Allow $1
+curl -Is curl -Is "$1" | grep 'Allow' | cut -d ' ' -f2-
