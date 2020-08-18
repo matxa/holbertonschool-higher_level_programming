@@ -1,4 +1,3 @@
 #!/bin/bash
-# send GET request and get only body with 200 status
+curl -s -X "GET" $1
 
-curl -X "GET" $1

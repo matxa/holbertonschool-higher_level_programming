@@ -1,4 +1,3 @@
 #!/bin/bash
-# sent header variable
+curl -s -H "X-HolbertonSchool-User-Id: 98" $1
 
-curl -H "X-HolbertonSchool-User-Id: 98" $1
