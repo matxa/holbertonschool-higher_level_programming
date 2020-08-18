@@ -1,3 +1,3 @@
 #!/bin/bash
-curl -s $1 | wc -c
+curl -Is $1 | grep 'Content-Length' | cut -d ' ' -f2
 
