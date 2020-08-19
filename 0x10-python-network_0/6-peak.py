@@ -18,6 +18,11 @@ def find_peak(list_of_integers):
     if list_of_integers.count(list_of_integers[0]) == len(list_of_integers):
         return list_of_integers[0]
 
+    if list_of_integers[0] > list_of_integers[1]:
+        return list_of_integers[0]
+    if list_of_integers[-1] > list_of_integers[-2]:
+        return list_of_integers[-1]
+
     peak_lis = []
     for num in range(len(list_of_integers)):
         if list_of_integers[num] > list_of_integers[num - 1] and\
