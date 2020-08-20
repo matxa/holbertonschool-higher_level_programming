@@ -1,3 +1,3 @@
 #!/bin/bash
 # status code of the response
-curl -Is curl -Is "$1" | grep 'HTTP/1.0' | cut -d ' ' -f2
+curl -s -o /dev/null -w "%{http_code}" "$1"
