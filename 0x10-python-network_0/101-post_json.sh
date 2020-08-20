@@ -1,3 +1,3 @@
 #!/bin/bash
 # post request
-echo "\"\"" && curl -s -X "POST" -H "Content-Type: application/json" -d @"$2" "$1"
+curl "$1" -s -X "POST" -H "Content-Type: application/json" -d @"$2"
