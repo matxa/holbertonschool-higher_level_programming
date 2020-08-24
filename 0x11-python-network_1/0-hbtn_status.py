@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 """urllib package"""
-import urllib
-from urllib import request
 
 if __name__ == "__main__":
+    import urllib
+    import urllib.request
+
     url = 'https://intranet.hbtn.io/status'
-    with request.urlopen(url) as resp:
+    with urllib.request.urlopen(url) as resp:
         resp_read = resp.read()
         body_resp = {
             'type': type(resp_read),
