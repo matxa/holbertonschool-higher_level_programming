@@ -10,7 +10,7 @@ with request.urlopen(url) as resp:
     body_resp = {
         'type': type(resp_read),
         'content': resp_read,
-        'utf8': resp_read.decode('utf-8')
+        'utf8 content': resp_read.decode('utf-8')
     }
     print("Body response:")
     for k, v in body_resp.items():
