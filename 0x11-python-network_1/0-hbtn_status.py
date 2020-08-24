@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """urllib package"""
-import urllib
 from urllib import request
 
 
