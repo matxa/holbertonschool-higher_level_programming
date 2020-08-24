@@ -3,10 +3,10 @@
 
 if __name__ == "__main__":
     import urllib
-    import urllib.request
+    from urllib import request
 
     url = 'https://intranet.hbtn.io/status'
-    with urllib.request.urlopen(url) as resp:
+    with request.urlopen(url) as resp:
         resp_read = resp.read()
         body_resp = {
             'type': type(resp_read),
