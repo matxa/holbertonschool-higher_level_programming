@@ -18,5 +18,5 @@ if __name__ == "__main__":
             print("[{}] {}".format(res_json.get('id'), res_json.get('name')))
         else:
             print("Not a valid JSON")
-    except:
+    except Exception:
         print("No result")
