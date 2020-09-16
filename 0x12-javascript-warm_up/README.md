@@ -57,6 +57,8 @@
         a an object you can still change it property, with that in mind it's not possible to redeclare a const object but its properties.
 </pre>
 
+<br>
+
 # Methods/Functions Used &#9660;
 <pre>
     <h4>Standard LIB &#9660;</h4>
@@ -73,6 +75,7 @@
     <b>SecondLargest()</b> - finds the second largerst number in a given array.
 </pre>
 
+<br>
 
 ## Requirements
 <a href="https://nodejs.org/en/">Install NodeJs</a>
