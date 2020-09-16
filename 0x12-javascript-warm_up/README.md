@@ -24,7 +24,7 @@
 
 <br>
 
-# <smal>🤓</smal> let
+# 🤓 let
 ```Javascript
     function letExample() {
         for (let n = 1; n < 3; n++) {
