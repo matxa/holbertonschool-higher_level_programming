@@ -1,7 +1,12 @@
 #!/usr/bin/node
 // factorial
-let total = 1;
-for (let num = 1; num <= parseInt(process.argv[2]); num++) {
-  total = total * num;
+function factorial (num) {
+  if (num === 0) {
+    return 1;
+  }
+  return num * factorial(num - 1);
 }
-console.log(total);
+
+if (parseInt(process.argv[2])) {
+  console.log(factorial(parseInt(process.argv[2])));
+}
