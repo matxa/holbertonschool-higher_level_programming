@@ -82,5 +82,7 @@ sudo npm install semistandard --global
 
 ## Helpful Links
 <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">JavaScript Basics</a>
+
 <a href="https://www.youtube.com/watch?v=sjyJBL5fkp8&ab_channel=FunFunFunction">Watch - var, let and const</a>
+
 <a href="https://github.com/mbeaudru/modern-js-cheatsheet">Modern JS</a>
