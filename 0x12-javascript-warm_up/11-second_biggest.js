@@ -1,6 +1,6 @@
 #!/usr/bin/node
 // factorial
-if (process.argv.length < 4) {
+if (process.argv.length === 2 || process.argv.length === 3) {
   console.log(0);
 } else {
   const array = process.argv.slice(2, process.argv.length);
