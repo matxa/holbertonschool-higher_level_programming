@@ -1,14 +1,8 @@
 ### AUTHOR <small>Marcelo</small>
-<h1>0x12-javascript-warm_up</h1>
+<h1>0x12-javascript-warm_up - <small>JavaScript Tutorial</small></h1>
 
-<h2 style="color:red;">JavaScript Tutorial</h2>
 
-<h1>var <small>vs</small> let <small>vs</small> const</h1>
-
-## var
-```Javascript
-var name = value;
-```
+# 🤨 var
 ```Javascript
     function varExample() {
         for (var n = 1; n < 3; n++) {
@@ -27,13 +21,10 @@ var name = value;
         - with var you can use a varibale before declaring it.
 </pre>
 
-## let
-```Javascript
-let name = value;
-```
+# 🤓 let
 ```Javascript
     function varExample() {
-        for (var n = 1; n < 3; n++) {
+        for (let n = 1; n < 3; n++) {
             console.log(n);
         }
         console.log(n);
@@ -48,10 +39,7 @@ let name = value;
         - with let you can not use a varibale before declaring it.
 </pre>
 
-## const
-```Javascript
-const name = value;
-```
+# 🤩 const
 ```JavaScript
     const myVar = "I can't change";
     myVar = 10; // causes an error when trying to redifine/redeclare.
