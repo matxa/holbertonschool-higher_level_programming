@@ -23,6 +23,7 @@
 </pre>
 
 <br>
+
 # 🤓 let
 ```Javascript
     function letExample() {
@@ -42,6 +43,7 @@
 </pre>
 
 <br>
+
 # 🤩 const
 ```JavaScript
     const myVar = "I can't change";
