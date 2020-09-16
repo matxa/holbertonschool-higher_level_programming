@@ -51,3 +51,36 @@
         - const has an exception and that is its true you cant't redeclare a varible, but if const is
         a an object you can still change it property, with that in mind it's not possible to redeclare a const object but its properties.
 </pre>
+
+# Methods/Functions Used &#9660;
+<pre>
+    <h4>Standard LIB &#9660;</h4>
+    <b>console.log()</b>  - print to console, if using node then prints to standard output.
+    <b>process.argv</b>   - for getting arguments.
+    <b>parseInt()</b>     - converts to interger.
+    <b>repeat()</b>       - duplicates or repeat string X number of times.
+    <b>sort()</b>         - array method to sort.
+    <b>push()</b>         - array method to add to end of array.
+    <b>module.export</b> - export module to can importable, from any file.
+
+    <h4>Created by Author &#9660;</h4>
+    <b>factorial()</b>   - finds the factorial of a number.
+    <b>SecondLargest()</b> - finds the second largerst number in a given array.
+</pre>
+
+
+## Requirements
+<a href="https://nodejs.org/en/">Install NodeJs</a>
+```bash
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
+<a href="https://www.npmjs.com/package/semistandard">Install semistandard</a>
+```bash
+sudo npm install semistandard --global
+```
+
+## Helpful Links
+<a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">JavaScript Basics</a>
+<a href="https://www.youtube.com/watch?v=sjyJBL5fkp8&ab_channel=FunFunFunction">Watch - var, let and const</a>
+<a href="https://github.com/mbeaudru/modern-js-cheatsheet">Modern JS</a>
