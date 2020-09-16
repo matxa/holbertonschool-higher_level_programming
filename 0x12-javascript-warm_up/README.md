@@ -16,8 +16,8 @@
     <b>var keyword</b> &#9660;
     
         - is function scoped, meaning it can be accessed from anywhere in the function.
-        - This can be a problem - beacuse var is not blocked scoped it can collide with later assigment or defenition of the same varibale.
-        - it is easy to overight varibales accidently.
+        - This can be a problem - beacuse var is not block scoped it can collide with later assigment or defenition of the same varibale.
+        - it is easy to overwrite varibales accidently.
         - with var you can use a varibale before declaring it.
 </pre>
 
@@ -47,7 +47,7 @@
 <pre>
     <b>const keyword</b> &#9660;
     
-        - const is similar to let but the only difference is once you can't redeclare const variables.
+        - const is similar to let but the only difference is once declared it you can't redeclare const variables.
         - const has an exception and that is its true you cant't redeclare a varible, but if const is
-        a an object you can still change it property, with that in mind it's not possible to redeclare a const object.
+        a an object you can still change it property, with that in mind it's not possible to redeclare a const object but its properties.
 </pre>
