@@ -3,7 +3,7 @@
 
 <h2 style="color:red;">JavaScript Tutorial</h2>
 
-# var <small>vs</small> let <small>vs</small> const
+<h1>var <small>vs</small> let <small>vs</small> const</h1>
 
 ## var
 ```Javascript
