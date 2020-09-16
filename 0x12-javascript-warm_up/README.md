@@ -28,20 +28,18 @@ var name = value;
 ```Javascript
 let name = value;
 ```
+```Javascript
+    function varExample() {
+        for (var n = 1; n < 3; n++) {
+            console.log(n);
+        }
+        console.log(n);
+        // becuase we are using let the variable n only exist inside the for loop.
+        // running console.log(n) outside the for loop will cause an error of varible is not defined.
+    }
+```
 <pre>
     <b>let keyword</b> &#9660;
-    <code>
-        ```Javascript
-        function varExample() {
-            for (var n = 1; n < 3; n++) {
-                console.log(n);
-            }
-            console.log(n);
-            // becuase we are using let the variable n only exist inside the for loop.
-            // running console.log(n) outside the for loop will cause an error of varible is not defined.
-        }
-        ```
-    </code>
         - is block scoped, meaning it can only be accessed in the block it was declared.
         - with let you can not use a varibale before declaring it.
 </pre>
