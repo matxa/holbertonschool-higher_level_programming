@@ -23,7 +23,7 @@
 
 # 🤓 let
 ```Javascript
-    function varExample() {
+    function letExample() {
         for (let n = 1; n < 3; n++) {
             console.log(n);
         }
