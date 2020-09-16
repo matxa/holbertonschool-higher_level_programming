@@ -1,6 +1,6 @@
 ### AUTHOR <small>Marcelo</small>
 <h1>0x12-javascript-warm_up - <small>JavaScript Tutorial</small></h1>
-
+<br>
 
 # 🤨 var
 ```Javascript
