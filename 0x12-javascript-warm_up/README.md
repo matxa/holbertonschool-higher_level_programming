@@ -12,6 +12,7 @@
         // even though var n was declared in a the block for loop it can still be accessible outside of the for loop block.
     }
 ```
+
 <pre>
     <b>var keyword</b> &#9660;
     
@@ -21,6 +22,7 @@
         - with var you can use a varibale before declaring it.
 </pre>
 
+<br>
 # 🤓 let
 ```Javascript
     function letExample() {
@@ -39,6 +41,7 @@
         - with let you can not use a varibale before declaring it.
 </pre>
 
+<br>
 # 🤩 const
 ```JavaScript
     const myVar = "I can't change";
