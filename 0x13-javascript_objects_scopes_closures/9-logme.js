@@ -1,8 +1,9 @@
 #!/usr/bin/node
 // print num of args printed
 
+const array = [];
 exports.logMe = function (item) {
-  const array = [];
   array.push(item);
-  console.log(array);
+  const index = array.indexOf(item);
+  console.log(index + ': ' + array[index]);
 };
