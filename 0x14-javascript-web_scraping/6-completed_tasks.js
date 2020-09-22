@@ -9,7 +9,7 @@ const options = {
 };
 
 request(options, (err, res, body) => {
-  if (!err) {
+  if (!err && res.statusCode === 200) {
     const data = JSON.parse(body);
     let taksCount = 0;
     const log = {};
