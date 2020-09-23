@@ -3,12 +3,7 @@
 
 const request = require('request');
 
-const options = {
-  url: process.argv[2],
-  method: 'GET'
-};
-
-request(options, (err, res, body) => {
+request(process.argv[2], (err, res, body) => {
   if (!err && res.statusCode === 200) {
     const data = JSON.parse(body);
     const characters = [];
