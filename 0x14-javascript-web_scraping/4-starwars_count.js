@@ -9,7 +9,7 @@ const options = {
 };
 
 request(options, (err, res, body) => {
-  if (!err) {
+  if (!err && res.statusCode === 200) {
     const data = JSON.parse(body);
     const characters = [];
     for (let i = 0; i < data.results.length; i++) {
