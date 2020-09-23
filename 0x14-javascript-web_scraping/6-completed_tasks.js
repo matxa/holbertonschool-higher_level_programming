@@ -16,10 +16,10 @@ request('https://jsonplaceholder.typicode.com/users', (err, res, body) => {
             if (data[i].userId === user) {
               if (data[i].completed) {
                 taksCount += 1;
+                log[user] = taksCount;
               }
             }
           }
-          log[user] = taksCount;
           taksCount = 0;
         }
         console.log(log);
